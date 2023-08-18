@@ -33,9 +33,9 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "look",
+                    "name": "Look",
                     "type": "Value",
-                    "id": "d9e546ab-bde1-4083-8810-6c101738cfe3",
+                    "id": "07d6750d-d892-44f1-98ec-7f01e8f0520c",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -44,7 +44,7 @@
                 {
                     "name": "Target",
                     "type": "Button",
-                    "id": "18b541fb-beac-4ca4-937f-19ce3153f194",
+                    "id": "a99e738d-7080-438c-bc83-7b5f6b3d16d6",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -53,7 +53,7 @@
                 {
                     "name": "Cancel",
                     "type": "Button",
-                    "id": "97f4eb40-01bb-4a35-bbf4-b439cdaa0d64",
+                    "id": "94f38429-6de6-4812-a95d-fba54d65afd2",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -133,7 +133,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Mouse & Keyboard",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -144,7 +144,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Mouse & Keyboard",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -155,7 +155,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Mouse & Keyboard",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -166,7 +166,7 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Mouse & Keyboard",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -188,7 +188,7 @@
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Mouse & Keyboard",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -199,7 +199,7 @@
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Mouse & Keyboard",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -210,7 +210,7 @@
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Mouse & Keyboard",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -221,36 +221,36 @@
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Mouse & Keyboard",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "4a25ea1a-a071-496b-8bee-245b4b9a91ec",
+                    "id": "c738f09f-b268-4b1e-97ba-62c59daf0b24",
                     "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "Mouse & Keyboard",
-                    "action": "look",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "e013920d-a810-4140-ae37-22f981444916",
+                    "id": "67a96e3a-c545-490c-a275-b4dfc6f665ca",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "look",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "e098a75f-7149-4660-937a-ae64129cffe0",
+                    "id": "3165ae3f-6525-4a27-8459-8ec511fd78a6",
                     "path": "<Keyboard>/tab",
                     "interactions": "",
                     "processors": "",
@@ -261,7 +261,7 @@
                 },
                 {
                     "name": "",
-                    "id": "37792f6e-d6d0-4b68-a355-8e1a51a46819",
+                    "id": "ca506974-afb2-401a-b9e4-f69fc7ca7f94",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
@@ -272,7 +272,7 @@
                 },
                 {
                     "name": "",
-                    "id": "c49fe2d3-87b1-419f-8d51-b50758387d8d",
+                    "id": "0b8752a8-aef7-45cf-9cd2-6ad918d17782",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
@@ -283,11 +283,11 @@
                 },
                 {
                     "name": "",
-                    "id": "232c140e-c65c-4382-b19f-0be58a6bb802",
+                    "id": "f43dbf50-4f8b-4c70-967e-a4ed1a3a42be",
                     "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
