@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerTargetingState : PlayerBaseState
 {
-    private readonly int TargetingBlendTreeHash = Animator.StringToHash("Targeting Blend Tree");
+    private readonly int TargetingBlendTreeHash = Animator.StringToHash("TargetingBlendTree");
 
     public PlayerTargetingState(PlayerStateMachine stateMachine) : base(stateMachine) { }
 
@@ -17,9 +17,10 @@ public class PlayerTargetingState : PlayerBaseState
 
     public override void Tick(float deltaTime)
     {
-        if (stateMachine.Targeter.CurrentTarget != null)
+        if (stateMachine.Targeter.CurrentTarget == null)
         {
             stateMachine.SwitchState(new PlayerFreeLookState(stateMachine));
+            return;
         }
     }
 
