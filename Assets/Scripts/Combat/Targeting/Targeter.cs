@@ -10,6 +10,12 @@ public class Targeter : MonoBehaviour
     private List<Target> targets = new List<Target>();
 
     public Target CurrentTarget { get; private set; }
+    public Camera mainCamera;
+
+    public void Start()
+    {
+        mainCamera = Camera.main;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,7 +35,26 @@ public class Targeter : MonoBehaviour
     public bool SelectTarget()
     {
         if (targets.Count == 0) { return false; }
+        Target closestTarget = null;
+        float closestTargetDistance = Mathf.Infinity;
 
+        foreach(Target target in targets)
+            {
+            Vector2 viewPos = mainCamera.WorldToViewportPoint(target.transform.position);
+            if(viewPos.x < 0 || viewPos.x > 1 || viewPos.y < 0 || viewPos.y > 1) 
+            { 
+                continue; 
+            }
+
+            Vector2 toCenter = viewPos - new Vector2(0.5f, 0.5f);
+            if(toCenter.sqrMagnitude < closestTargetDistance)
+            {
+                closestTarget = target;
+                closestTargetDistance = toCenter.sqrMagnitude;
+            }
+
+        }
+        if(closestTarget == null) { return false; } 
         CurrentTarget = targets[0];
         cineTargetGroup.AddMember(CurrentTarget.transform, 1f, 2f);
 
