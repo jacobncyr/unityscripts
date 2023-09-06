@@ -11,6 +11,11 @@ public abstract class PlayerBaseState : State
         this.stateMachine = stateMachine;
     }
 
+    protected void Move(float deltaTime)
+    {
+        Move(Vector3.zero, deltaTime);
+    }
+
     protected void Move(Vector3 motion, float deltaTime)
     {
         stateMachine.Controller.Move((motion + stateMachine.ForceReceiver.Movement) * deltaTime);
@@ -25,14 +30,5 @@ public abstract class PlayerBaseState : State
 
         stateMachine.transform.rotation = Quaternion.LookRotation(lookPos);
     }
-    private Vector3 CalculateMovement()
-    {
-        Vector3 movement = new Vector3();
-        movement += stateMachine.transform.right * stateMachine.InputReader.MovementValue.x;
-        movement = stateMachine.transform.forward * stateMachine.InputReader.MovementValue.y;
-            
-        return movement;
-    }
-
 }
 
